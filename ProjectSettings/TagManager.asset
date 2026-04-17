@@ -9,6 +9,7 @@ TagManager:
   - Danger
   - Gate
   - Key
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class Collectables : MonoBehaviour
 {
+    public GameObject psl;
     private int keys;
     /// <summary>
     /// Sets how many keys you start with.
@@ -43,6 +44,11 @@ public class Collectables : MonoBehaviour
                 keys--;
                 Destroy(collision.gameObject);
             }
+        }
+        if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+          //Updates the player spawn location to where the checkpoint is.
+          psl.transform.position = collision.gameObject.transform.position;
         }
     }
 }

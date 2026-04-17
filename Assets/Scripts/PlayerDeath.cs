@@ -5,9 +5,7 @@
 //
 // Brief Description : What happens when the player dies
 *****************************************************************************/
-using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
