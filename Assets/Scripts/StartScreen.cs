@@ -25,4 +25,11 @@ public class StartScreen : MonoBehaviour
     {
         Application.Quit();
     }
+    /// <summary>
+    /// Send the player back to the start
+    /// </summary>
+    public void BackToStart()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
